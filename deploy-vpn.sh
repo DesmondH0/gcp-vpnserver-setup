@@ -93,6 +93,6 @@ linediff="$((eline-sline))"
 ovpn_name=$(echo $externalip | sed 's/\./-/g')
 tail -n "+$sline" $templog | head -n "$(($eline-$sline+1))" > /tmp/$ovpn_name.ovpn
 
-log_info "Please download the file located at ${GREEN}/tmp/$ovpn_name.ovpn${NC}"
+log_info "Please download the file from ${GREEN}/tmp/$ovpn_name.ovpn${NC}"
 
 log_info "${GREEN}DONE${NC}"

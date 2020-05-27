@@ -7,5 +7,5 @@ Create a Debian instance on GCP
 
 Run the following commnad to deploy:
 ```
-curl https://raw.githubusercontent.com/DesmondH0/gcp-vpnserver-setup/master/deploy-vpn.sh | sudo bash
+curl -s -L https://raw.githubusercontent.com/DesmondH0/gcp-vpnserver-setup/master/deploy-vpn.sh | sudo bash
 ```
