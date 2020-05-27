@@ -57,7 +57,7 @@ fi
 log_info "Starting openvpn server..."
 if [ "$(docker ps -a | grep openvpn)" ]; then
     log_info "OpenVPN server found on server..."
-    read -p "Do you wish to re-create the OVPN server? (It would generate a new config!)" yn
+    read < /dev/tty -p "Do you wish to re-create the OVPN server? (It would generate a new config!)" yn
     case $yn in
         [Yy]* ) destroy_ovpn;;
         [Nn]* ) log_error "Action aborted..."; exit 1;;
